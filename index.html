@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="TRYZONE — Men's streetwear. Built for everyday confidence.">
+  <title>TRYZONE | Men's Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS ABOVE ₹1,499 <span>•</span> COD AVAILABLE</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TRYZONE home"><img src="assets/tryzone-logo.png" alt="TRYZONE Clothing Brand"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#new">NEW ARRIVALS</a><a href="#shop">SHOP</a><a href="#about">OUR STORY</a>
+    </nav>
+    <button class="cart-button" id="openCart">BAG <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW STREET UNIFORM</p>
+        <h1>OWN YOUR<br><span>ZONE.</span></h1>
+        <p class="hero-sub">Everyday essentials. Street-ready attitude.<br>Made for men who move their own way.</p>
+        <a class="button button-light" href="#shop">SHOP THE DROP <span>↗</span></a>
+      </div>
+      <div class="hero-stamp"><span>TRYZONE</span><b>EST.<br>2026</b></div>
+      <div class="hero-bottom"><span>MEN'S COLLECTION / 001</span><span>BUILT TO STAND OUT</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Brand message"><div>NO RULES. JUST YOUR STYLE. ✳ TRYZONE. ✳ NO RULES. JUST YOUR STYLE. ✳ TRYZONE. ✳</div></section>
+
+    <section class="section" id="new">
+      <div class="section-heading"><div><p class="eyebrow">FRESH OFF THE DROP</p><h2>NEW ARRIVALS<span>.</span></h2></div><a class="text-link" href="#shop">VIEW ALL ↗</a></div>
+      <div class="feature-grid">
+        <article class="feature feature-one"><div class="feature-label">01 / EVERYDAY FIT</div><div class="feature-info"><h3>THE DAILY<br>ROTATION</h3><a href="#shop">EXPLORE ↗</a></div></article>
+        <article class="feature feature-two"><div class="feature-label">02 / STREET ESSENTIALS</div><div class="feature-info"><h3>MADE TO<br>MOVE</h3><a href="#shop">EXPLORE ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FIT</p><h2>SHOP THE DROP<span>.</span></h2></div><p class="muted">MEN'S COLLECTION</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="tshirts">T-SHIRTS</button><button class="filter" data-filter="shirts">SHIRTS</button><button class="filter" data-filter="hoodies">HOODIES</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p class="eyebrow">THIS IS TRYZONE</p><h2>YOUR STYLE.<br>YOUR RULES.<br><span>YOUR ZONE.</span></h2>
+      <p>TRYZONE is for the ones who don't wait for permission to be themselves. Clean fits, confident energy and everyday pieces that speak without trying too hard.</p>
+      <a class="button button-outline" href="#shop">FIND YOUR FIT ↗</a>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">STAY IN THE ZONE</p><h2>GET FIRST ACCESS.</h2><p class="muted">New drops, fresh fits and exclusive updates.</p></div>
+      <form id="newsletterForm"><input type="email" id="email" placeholder="YOUR EMAIL ADDRESS" required><button type="submit">JOIN ↗</button></form>
+    </section>
+  </main>
+
+  <footer><a href="#home" class="footer-logo">TRYZONE<span>®</span></a><p>MEN'S CLOTHING • BUILT FOR YOUR EVERYDAY</p><div><a href="#shop">SHOP</a><a href="#about">ABOUT</a><a href="mailto:hello@tryzone.in">CONTACT</a></div><small>© 2026 TRYZONE. ALL RIGHTS RESERVED.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="drawer-head"><h2>YOUR BAG</h2><button id="closeCart" aria-label="Close cart">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Your bag is empty.</p></div>
+    <div class="drawer-foot"><div class="total"><span>SUBTOTAL</span><strong id="cartTotal">₹0</strong></div><p class="tiny">Shipping and final charges confirmed at order.</p><button class="button button-light full" id="checkoutBtn">ORDER ON WHATSAPP ↗</button><p class="tiny">Cash on Delivery can be requested. Online payment setup will be added after payment-gateway activation.</p></div>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
